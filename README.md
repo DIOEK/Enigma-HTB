@@ -94,6 +94,12 @@ Export list for enigma.htb:
 ```
 
 The asterisk here means that any client can mount the "onboarding" directorie. Of course that includes us.
-
+First create a new directory, then mount onboarding onto it:
 ```bash
+sudo mount -t nfs enigma.htb:/srv/nfs/onboarding ./enigma
+```
 
+Inside it there'll be a document for onboarding:
+<img width="1266" height="685" alt="Captura de tela 2026-06-27 203340" src="https://github.com/user-attachments/assets/00ff2fea-bc5c-4594-a98c-15cf1e502f11" />
+
+The pdf tells us that there is a subdomain called mail001.enigma.htb that can be accessed via the kevin:Engima2024! credentials
